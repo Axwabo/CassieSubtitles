@@ -1,5 +1,6 @@
 * {
     font-family: Consolas, monospace;
+    box-sizing: border-box;
 }
 
 :root {
@@ -14,7 +15,7 @@ h1, h2 {
 
 code {
     background-color: black;
-    padding: 0.25em;
+    padding: 0.2em;
 }
 
 main {
@@ -30,7 +31,7 @@ section {
     gap: 0.25em;
 }
 
-section label {
+section > div > label {
     font-size: 1.5rem;
 }
 
