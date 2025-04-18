@@ -15,6 +15,7 @@ const previewProcessors = [
 ];
 
 function updateText() {
+    output.value = `${translation.value.replaceAll(" ", "​")}<size=0> ${message.value} </size>`;
     let html = translation.value;
     for (const [ regex, replacement ] of previewProcessors)
         html = html.replaceAll(regex, replacement);
