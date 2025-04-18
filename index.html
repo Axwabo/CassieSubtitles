@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C.A.S.S.I.E. Subtitles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>C.A.S.S.I.E. subtitle generator</h1>
+    <h2>for SCP: Secret Laboratory</h2>
+    <ol>
+        <li>Type the message C.A.S.S.I.E. will announce</li>
+        <li>Type the visible translation</li>
+        <li>Copy the output and announce it using <code>cassie</code> or <code>cassie_sl</code></li>
+    </ol>
+</header>
+<main>
+    <section>
+        <label for="message">Message</label>
+        <textarea id="message" class="text"></textarea></section>
+    <section>
+        <label for="translation">Translation</label>
+        <textarea id="translation" class="text"></textarea>
+    </section>
+    <section>
+        <div>
+            <label for="output">Output</label>
+            <button id="copy">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path fill="white" d="M384 336l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L400 115.9 400 320c0 8.8-7.2 16-16 16zM192 384l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1L192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-32-48 0 0 32c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l32 0 0-48-32 0z"/>
+                </svg>
+            </button>
+        </div>
+        <textarea disabled id="output" class="text"></textarea>
+    </section>
+    <section>
+        <label>Preview*</label>
+        <div class="text" id="preview"></div>
+    </section>
+</main>
+<footer>
+    <p>*This preview does not fully reflect the Rich Text shown in-game.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

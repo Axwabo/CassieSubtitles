@@ -1,0 +1,63 @@
+* {
+    font-family: Consolas, monospace;
+}
+
+:root {
+    color-scheme: dark;
+    background-color: #222;
+    color: #eee;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+code {
+    background-color: black;
+    padding: 0.25em;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+section label {
+    font-size: 1.5rem;
+}
+
+.text {
+    resize: none;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    min-height: 8rem;
+    border-radius: 0;
+}
+
+#preview {
+    border: 1px solid #777;
+}
+
+#copy svg {
+    width: 1em;
+}
+
+footer {
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+@media (max-width: 50rem) {
+    main {
+        grid-template-columns: 1fr;
+        min-height: 5rem;
+    }
+}
