@@ -45,6 +45,7 @@ section > div > label {
 }
 
 #preview {
+    position: relative;
     border: 1px solid #777;
     word-break: break-word;
 }
@@ -56,6 +57,25 @@ section > div > label {
 footer {
     font-size: 0.75rem;
     color: #aaa;
+}
+
+#preview span {
+    display: inline-block;
+}
+
+.mark {
+    position: relative;
+    --mark: transparent;
+}
+
+.mark::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mark);
 }
 
 @media (max-width: 50rem) {
