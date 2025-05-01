@@ -44,7 +44,21 @@
     </section>
 </main>
 <footer>
-    <p>*This preview does not fully reflect the Rich Text shown in-game.</p>
+    <p class="note">*This preview does not fully reflect the Rich Text shown in-game.</p>
+    <p>
+        The trick is that we replace whitespaces of the translation with
+        <a href="https://zerowidthspace.me/">zero-width spaces</a> which makes C.A.S.S.I.E. be unable to recognize that text as those words are treated as one long phrase.
+    </p>
+    <p class="note">You can use any invisible space character as the font is monospace.</p>
+    <p>
+        Then, we hide the announcement message by wrapping it in <code>&lt;size=0&gt; &lt;/size&gt;</code> with spaces around the message.
+        <br>
+        The spaces are crucial. Otherwise, the tag will be treated as part of the phrase, preventing C.A.S.S.I.E. from pronouncing it.
+    </p>
+    <p>
+        During development, this "trick" is obsolete.
+        The game now supports custom subtitle text out of the box with the <code>customSubtitles</code> parameter.
+    </p>
 </footer>
 <script src="script.js"></script>
 </body>

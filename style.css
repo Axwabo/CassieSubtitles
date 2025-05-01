@@ -54,7 +54,7 @@ section > div > label {
     width: 1em;
 }
 
-footer {
+.note {
     font-size: 0.75rem;
     color: #aaa;
 }
